@@ -1,5 +1,5 @@
 function checkPalindrome() {
-    const input = document.getElementById("input");
+    const input = document.getElementById("input-number");
     const output = document.getElementById("result");
 
     const reg = new RegExp(/^\d+(\.\d+)?$/);
