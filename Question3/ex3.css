@@ -1,0 +1,52 @@
+body {
+    background-color: white;
+    /*background-image: url('media/');*/
+    background-size: cover; /* covers the background gif across the body of the page */
+    font-family: Hack, monospace;
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    margin: 10% auto;
+    padding: 2%; /* Adjusted padding inside the container */
+    background-color: black;
+    border: 2px solid yellow;
+    box-shadow: 0 0 5px yellow;
+    color: white;
+    text-align: center;
+    width: 65%; /* Adjusts the width of the div */
+}
+
+#palindrome-form,
+.result {
+    padding-bottom: 2%;
+}
+
+#check-button {
+    width: 15%;
+    margin-bottom: 2%;
+    padding: 2%;
+    font-size: 1.2vw;
+    background-color: green;
+    border: 2px solid black;
+    color: white;
+    cursor: pointer;
+}
+
+#check-button:hover {
+    background-color: darkgreen;
+}
+
+#result {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+#input-number {
+    width: 40%; /* Adjusted width for the text input */
+    padding: 1%; /* Adjusted padding for the text input */
+    font-size: 1.2vw;
+}
