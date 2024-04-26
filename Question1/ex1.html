@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="ex1.css">
+    <script type="text/javaScript" src="ex1.js"></script>
+    <title>Exercise 1</title>
+
 </head>
+
 <body>
+
+<div id="head">
+    <h1>Letter Grade Calculator for York</h1>
+</div>
+
+<div id="calc">
+    <form>
+        <label for="percent">Enter your mark percentage (just the number):</label>
+        <input type="text" id="percent" name="percent" placeholder="e.g., 78">
+
+        <div id="button1_2">
+            <input type="button" onclick="calculateLetterGrade()" value="Calculate">
+            <input type="reset" value="Reset">
+        </div>
+
+        <label for="letterGrade">Your letter grade compared to your mark is:</label>
+        <input type="text" id="letterGrade" readonly>
+    </form>
+</div>
 
 </body>
 </html>
