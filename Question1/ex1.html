@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
@@ -12,23 +13,24 @@
 <body>
 
 <div id="head">
-    <h1>Letter Grade Calculator for York</h1>
+    <h1>Grade Calculator for York</h1>
 </div>
 
 <div id="calc">
+
     <form>
-        <label for="percent">Enter your mark percentage (just the number):</label>
-        <input type="text" id="percent" name="percent" placeholder="e.g., 78">
-
-        <div id="button1_2">
-            <input type="button" onclick="calculateLetterGrade()" value="Calculate">
-            <input type="reset" value="Reset">
+        <label for="gradePercent">Enter your grade percentage (only the number):</label>
+        <input type="text" id="gradePercent" name="gradePercent" placeholder="e.g., 85">
+        <div id="buttons">
+            <input type="button" onclick="calculateLetterGrade()" value="Calculate Grade">
+            <input type="reset" value="Reset Form">
         </div>
-
-        <label for="letterGrade">Your letter grade compared to your mark is:</label>
-        <input type="text" id="letterGrade" readonly>
+        <label for="correspondingGrade">Your corresponding letter grade calculation:</label>
+        <input type="text" id="correspondingGrade" readonly>
     </form>
+
 </div>
 
 </body>
+
 </html>

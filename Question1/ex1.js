@@ -1,6 +1,6 @@
 function calculateLetterGrade() {
-    let percent = document.getElementById("percent").value;
     let letterGrade;
+    let percent = document.getElementById("gradePercent").value;
 
     if (percent >= 90 && percent <= 100) {
         letterGrade = "A+";
@@ -27,5 +27,5 @@ function calculateLetterGrade() {
         alert("Cannot calculate: Please provide a valid percentage between 0 and 100.")
     }
 
-    document.getElementById("letterGrade").value = letterGrade;
+    document.getElementById("correspondingGrade").value = letterGrade;
 }

@@ -1,0 +1,75 @@
+/* Styles for the header */
+#head {
+    align-content: center;
+    text-align: center;
+    display: block;
+    padding: 2%;
+    margin: 1% auto 4%; /* Margin 5% from top, auto horizontal margins, 7% from bottom */
+    width: 65%;
+    border: 4px solid #0000ff;
+    background-color: white;
+    color: black;
+}
+
+body {
+    font-family: Hack, monospace;
+    background-image: url('media/bluegiphy.gif');
+}
+
+/* Styles for the calculator container */
+#calc {
+    padding: 2% 2%;
+    margin: 7% 10% 7% 10%; /* Margin 7% from top, 10% from left and right, 0 from bottom */
+    border: 3px solid #ff0000;
+    background-color: white; /* White background incase the image gif fails */
+    color: black;
+}
+
+/* Styles for text input */
+input[type=text] {
+    width: 30%;
+    padding: 1.3% 1.3%;
+    margin: 2%;
+    border: 2px solid #0000ff;
+    font-size: 1vw;
+    color: white;
+    background-color: black;
+}
+
+/* Styles for buttons */
+input[type=button],
+input[type=reset] {
+    font-family: Hack, monospace;
+    width: 15%; /* Reduced width to 15% */
+    padding: 1% 2%;
+    margin: 2%;
+    border: 2px solid #0000ff;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    font-size: 1vw; /* Adjusted font size to be responsive */
+}
+
+/* Hover styles for buttons */
+input[type=button]:hover {
+    background-color: lightgreen;
+    border-color: #0000ff;
+}
+
+input[type=reset]:hover {
+    background-color: darkred;
+    border-color: #0000ff;
+}
+
+/* Styles for the button container */
+#buttons {
+    padding: 3% 0;
+    display: block;
+    text-align: center;
+}
+
+/* Styles for labels in the calc div */
+#calc label {
+    font-size: 1.2vw; /* Increase font size slightly */
+    font-weight: bold;
+}
