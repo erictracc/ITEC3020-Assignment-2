@@ -2,14 +2,32 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <link rel="stylesheet" href="ex2.css">
     <script type="text/javaScript" src="ex2.js"></script>
     <title>Exercise 2</title>
-
 </head>
-<body>
 
+<body>
+<div id="main">
+    <div id="content">
+        <div id="heading">
+            <h1>Positive and Negative Number Counter</h1>
+            <h3>Enter positive and negative numbers, and enter 0 when you have added all your numbers. then click"Submit" to count them.</h3>
+            <h3>After you submit, you can continue to add numbers and repeat the process! Have fun!</h3>
+        </div>
+        <div>
+            <form id="number-form" onsubmit="return false">
+                <label for="number-input">Enter a number:</label>
+                <input id="number-input" type="text">
+            </form>
+            <div id="result-container">
+                <span id="result"></span>
+                <button id="submit-button" onclick="storeNumbers()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
+
 </html>
