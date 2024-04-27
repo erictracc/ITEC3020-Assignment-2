@@ -1,0 +1,27 @@
+/* set the main body style */
+body {
+    position: absolute;
+    width: 450px;
+    height: 500px;
+    padding-right: 25px;
+    border: 5px solid black;
+    /*background-image: url("");*/
+    background-size: cover;
+    font-family: Hack, monospace;
+    background-color: #FFFFFF;
+}
+
+/* changed the size of the custom boxes */
+.custom-box {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+/* moved the button to the location in the assignment details*/
+.generate-button {
+    position: absolute;
+    bottom: 10px; /* Moved the button to the bottom */
+    left: 10px; /* Moved the button to the left */
+}
+
