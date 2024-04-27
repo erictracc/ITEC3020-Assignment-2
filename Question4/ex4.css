@@ -1,13 +1,12 @@
 /* set the main body style */
 body {
     position: absolute;
-    width: 450px;
+    padding: 25px;
     height: 500px;
-    padding-right: 25px;
+    width: 450px;
     border: 5px solid black;
     /*background-image: url("");*/
     background-size: cover;
-    font-family: Hack, monospace;
     background-color: #FFFFFF;
 }
 
@@ -16,6 +15,7 @@ body {
     position: absolute;
     width: 50px;
     height: 50px;
+    padding: 2px;
 }
 
 /* moved the button to the location in the assignment details*/
@@ -27,10 +27,11 @@ body {
 
 .description {
     position: absolute;
-    margin-top: 3.5%;
     padding: 0 3% 0 3%;
-    top: 25%;
+    top: 50%; /* specific to matching the div with the squares horizontally*/
     left: 124%;
     transform: translate(-50%, -50%); /* Center the description horizontally and vertically */
     border: 5px solid black;
+    font-family: Hack, monospace;
+    height: 550px;
 }

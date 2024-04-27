@@ -1,27 +1,27 @@
 // Wait for the DOM content to load before executing the script
 document.addEventListener("DOMContentLoaded", function() {
-    // Select the box container and generate button
-    const boxContainer = document.querySelector(".box-container");
+    // Select the container and generate button
+    const container = document.querySelector(".custom-container");
     const generateButton = document.querySelector(".generate-button");
 
-    // Event listener for mouseover on box container
-    boxContainer.addEventListener('mouseover', function(event) {
+    // Add event listener to the generate button
+    generateButton.addEventListener("click", generateBoxes);
+
+    // Event listener for mouseover on container
+    container.addEventListener('mouseover', function(event) {
         const box = event.target;
 
         // Check if the mouseover target is a box
-        if (box.classList.contains("box")) {
+        if (box.classList.contains("custom-box")) {
             // Remove the box
             box.remove();
 
-            // Check if box container has no child elements
-            if (boxContainer.childElementCount === 0) {
+            // Check if container has no child elements
+            if (container.childElementCount === 0) {
                 alert("Last child!");
             }
         }
     });
-
-    // Add event listener to the generate button
-    generateButton.addEventListener("click", generateBoxes);
 
     // Generate initial boxes
     generateBoxes();
@@ -29,18 +29,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Function to generate boxes
 function generateBoxes() {
-    const boxContainer = document.querySelector(".box-container");
+    const container = document.querySelector(".custom-container");
 
     // Generate 100 boxes
     for (let i = 0; i < 100; i++) {
         const box = document.createElement("div");
-        box.classList.add("box");
+        box.classList.add("custom-box");
         box.style.backgroundColor = getRandomColour();
         box.style.border = "thin solid black";
         box.style.position = "absolute";
         box.style.top = (Math.floor(Math.random() * 400)) + "px";
         box.style.left = (Math.floor(Math.random() * 400)) + "px";
-        boxContainer.appendChild(box);
+        container.appendChild(box);
     }
 }
 
