@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Check if container has no child elements
             if (container.childElementCount === 0) {
-                alert("Last child!");
+                alert("Last Box!");
             }
         }
     });

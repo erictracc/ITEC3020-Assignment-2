@@ -4,7 +4,7 @@ body {
     padding: 25px;
     height: 500px;
     width: 450px;
-    border: 5px solid black;
+    border: 5px solid yellowgreen;
     background-color: #FFFFFF;
 }
 
@@ -29,7 +29,7 @@ body {
     top: 50%; /* specific to matching the div with the squares horizontally*/
     left: 124%;
     transform: translate(-50%, -50%); /* Center the description horizontally and vertically */
-    border: 5px solid black;
+    border: 5px solid yellowgreen;
     font-family: Hack, monospace;
     height: 550px;
     background-color: #FFFFFF;
