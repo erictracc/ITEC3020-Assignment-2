@@ -25,3 +25,12 @@ body {
     left: 10px; /* Moved the button to the left */
 }
 
+.description {
+    position: absolute;
+    margin-top: 3.5%;
+    padding: 0 3% 0 3%;
+    top: 25%;
+    left: 124%;
+    transform: translate(-50%, -50%); /* Center the description horizontally and vertically */
+    border: 5px solid black;
+}
