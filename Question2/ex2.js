@@ -24,6 +24,7 @@ function storeNumbers() {
 
 
 
+
     // Add the number to the array and clear the input field
     numberArray[numberArray.length] = inputField.value;
     inputField.value = "";

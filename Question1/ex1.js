@@ -1,7 +1,11 @@
+//A function to calculate the letter grade based on percentage
 function calculateLetterGrade() {
+    //Declares variables
     let letterGrade;
+    //Gets the percentage input value from the HTML document
     let percent = document.getElementById("gradePercent").value;
 
+    //Determines the letter grade based on the percentage range
     if (percent >= 90 && percent <= 100) {
         letterGrade = "A+";
     } else if (percent >= 80 && percent <= 89) {
@@ -23,9 +27,11 @@ function calculateLetterGrade() {
     } else if ((percent >= 1 && percent <= 39) || percent === "0") {
         letterGrade = "F";
     } else {
+        //If percentage is not within the valid range, show an alert to the user
         letterGrade = "";
         alert("Cannot calculate: Please provide a valid percentage between 0 and 100.")
     }
 
+    //Sets the calculated letter grade in the corresponding input field
     document.getElementById("correspondingGrade").value = letterGrade;
 }

@@ -27,6 +27,22 @@ document.addEventListener("DOMContentLoaded", function() {
     generateBoxes();
 });
 
+
+// Function to generate random colour
+function getRandomColour() {
+    const hexValues = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f'];
+    let colour = "";
+
+    // Generate random colour code
+    for (let i = 0; i < 6; i++) {
+        colour += hexValues[Math.floor(Math.random() * 16)];
+    }
+
+    return "#" + colour;
+}
+
+
+
 // Function to generate boxes
 function generateBoxes() {
     const container = document.querySelector(".custom-container");
@@ -42,17 +58,4 @@ function generateBoxes() {
         box.style.left = (Math.floor(Math.random() * 400)) + "px";
         container.appendChild(box);
     }
-}
-
-// Function to generate random colour
-function getRandomColour() {
-    const hexValues = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f'];
-    let colour = "";
-
-    // Generate random colour code
-    for (let i = 0; i < 6; i++) {
-        colour += hexValues[Math.floor(Math.random() * 16)];
-    }
-
-    return "#" + colour;
 }
