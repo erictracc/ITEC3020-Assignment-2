@@ -1,8 +1,8 @@
 const numbArray = [];
 
 function storedNumbs() {
-    let input_Field = document.getElementById("number-input");
-    let result_Field = document.getElementById("result");
+    let input_Field = document.getElementById("input_num");
+    let result_Field = document.getElementById("final_result");
 
     // Check if the input is a valid number
     if (isNaN(input_Field.value)) {
@@ -34,7 +34,7 @@ function storedNumbs() {
 function calculatePosNeg(numbers) {
     let posCount = 0;
     let negCount = 0;
-    let result_Field = document.getElementById("result");
+    let result_Field = document.getElementById("final_result");
 
     for (let i = 0; i < numbers.length; i++) {
         if (numbers[i] < 0) {
