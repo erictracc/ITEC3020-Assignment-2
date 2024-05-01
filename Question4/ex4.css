@@ -9,20 +9,21 @@ body {
 }
 
 /* changed the size of the custom boxes */
-.custom-box {
+.custom-square {
     position: absolute;
     width: 50px;
     height: 50px;
     padding: 2px;
 }
 
-/* moved the button to the location in the assignment details*/
+/* moved the button to the same location in the assignment details*/
 .generate-button {
     position: absolute;
     bottom: 10px; /* Moved the button to the bottom */
     left: 10px; /* Moved the button to the left */
 }
 
+/* Style for the description container */
 .description {
     position: absolute;
     padding: 0 3% 0 3%;
@@ -35,6 +36,7 @@ body {
     background-color: #FFFFFF;
 }
 
+/* Style for the webpage */
 html {
     background-color: black;
 }
