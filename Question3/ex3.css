@@ -18,8 +18,8 @@ body {
     width: 65%; /* Adjusted the width of the div */
 }
 
-#palindrome-form,
-.result {
+#palindrome,
+.final_result {
     padding-bottom: 2%;
 }
 
@@ -39,14 +39,14 @@ body {
     background-color: darkblue;
 }
 
-#result {
+#final_result {
     align-items: center;
     display: flex;
     flex-direction: column;
     padding: 2%;
 }
 
-#input-number {
+#input_num {
     width: 40%; /* Adjusted width for the text input */
     padding: 1%; /* Adjusted padding for the text input */
     font-size: 1.2vw;

@@ -3,29 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="ex3.css">
     <script type="text/javaScript" src="ex3.js"></script>
+    <link rel="stylesheet" href="ex3.css">
     <title>Exercise 3</title>
 </head>
-
 <body>
-
 <div class = "main">
     <div id = "head">
-        <h1>Eric's Palindrome Checker</h1>
+        <h2>Eric's Palindrome Checker</h2>
         <p>Enter any positive number and check if it reads the same forwards and backwards.</p>
     </div>
     <div id = "input">
-        <form id = "palindrome-form" onsubmit="return false">
-            <label for = "input-number">Enter a Number:</label>
-            <input id = "input-number" type="text" title="Input Number">
+        <form id = "palindrome" onsubmit="return false">
+            <label for = "input_num">Enter a Number:</label>
+            <input id = "input_num" type="text" title="Input Number">
         </form>
-        <div class = "result">
-            <span id = "result"></span>
+        <div class = "final_result">
+            <span id = "final_result"></span>
             <button id="check-button" onclick="checkPalindrome()">Check</button>
         </div>
     </div>
 </div>
-
 </body>
 </html>
