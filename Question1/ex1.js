@@ -1,5 +1,5 @@
 //A function to calculate the letter grade based on percentage
-function calculateLetterGrade() {
+function calculateGrade() {
     //Declares variables
     let letterGrade;
     //Gets the percentage input value from the HTML document

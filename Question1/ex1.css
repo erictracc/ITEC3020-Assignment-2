@@ -4,11 +4,12 @@
     text-align: center;
     display: block;
     padding: 2%;
-    margin: 1% auto 4%; /* Margin 5% from top, auto horizontal margins, 7% from bottom */
+    margin: 1% auto 4%;
     width: 65%;
     color: black;
 }
 
+/* Styles for the body */
 body {
     font-family: Hack, monospace;
     background-image: url('media/blue_streaks.gif');
@@ -17,7 +18,7 @@ body {
 /* Styles for the calculator container */
 #calc {
     padding: 2% 2%;
-    margin: 7% 10% 7% 10%; /* Margin 7% from top, 10% from left and right, 0 from bottom */
+    margin: 7% 10% 7% 10%; /* Margin 7% from top, 10% from left and right, 10 from bottom */
     border: 3px solid #ff0000;
     background-color: white; /* White background incase the image gif fails */
     color: black;
@@ -59,15 +60,15 @@ input[type=reset]:hover {
     border-color: #0000ff;
 }
 
+/* Styles for labels in the calc div */
+#calc label {
+    font-size: 1.2vw; /* Increased the font size slightly */
+    font-weight: bold;
+}
+
 /* Styles for the button container */
 #buttons {
     padding: 3% 0;
     display: block;
     text-align: center;
-}
-
-/* Styles for labels in the calc div */
-#calc label {
-    font-size: 1.2vw; /* Increase font size slightly */
-    font-weight: bold;
 }
