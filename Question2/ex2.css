@@ -1,13 +1,4 @@
-body {
-    background-color: white;
-    background-image: url('media/yellow_waves.gif');
-    background-size: cover; /*covers the background gif across the body of the page*/
-    font-family: Hack, monospace;
-    height: 100%;
-    width: 100%;
-}
-
-#heading {
+#head {
     padding: 2%;
     margin-top: 2%;
     margin-bottom: 5%;
@@ -16,15 +7,13 @@ body {
     text-transform: uppercase; /* Transforms the text to all caps */
 }
 
-#content {
-    margin: 10% auto;
-    padding: 2%; /* Adjusted padding inside the container */
-    background-color: black;
-    border: 2px solid yellow;
-    box-shadow: 0 0 5px yellow;
-    color: white;
-    text-align: center;
-    width: 65%; /* Adjusts the width of the div */
+body {
+    background-color: white;
+    background-image: url('media/yellow_waves.gif');
+    background-size: cover; /*covers the background gif across the body of the page*/
+    font-family: Hack, monospace;
+    height: 100%;
+    width: 100%;
 }
 
 #number-form,
@@ -58,4 +47,15 @@ input[type="text"] {
     width: 40%; /* Adjusted width for the text input */
     padding: 1%; /* Adjusted padding for the text input */
     font-size: 1.2vw;
+}
+
+#content {
+    margin: 10% auto;
+    padding: 2%; /* Adjusted padding inside the container */
+    background-color: black;
+    border: 2px solid yellow;
+    box-shadow: 0 0 5px yellow;
+    color: white;
+    text-align: center;
+    width: 65%; /* Adjusts the width of the div */
 }

@@ -1,24 +1,24 @@
-const numberArray = [];
+const numbArray = [];
 
-function storeNumbers() {
-    let inputField = document.getElementById("number-input");
-    let resultField = document.getElementById("result");
+function storedNumbs() {
+    let input_Field = document.getElementById("number-input");
+    let result_Field = document.getElementById("result");
 
     // Check if the input is a valid number
-    if (isNaN(inputField.value)) {
+    if (isNaN(input_Field.value)) {
         alert("Invalid input. Please enter a valid number.");
         return;
     }
 
     // If a calculation has already been done, reset the array and result
-    if (resultField.textContent !== "") {
-        numberArray.length = 0;
-        resultField.textContent = "";
+    if (result_Field.textContent !== "") {
+        numbArray.length = 0;
+        result_Field.textContent = "";
     }
 
     // If the input is 0, calculate the number of positive and negative numbers
-    if (inputField.value === "0") {
-        calculatePositiveNegative(numberArray);
+    if (input_Field.value === "0") {
+        calculatePosNeg(numbArray);
         return;
     }
 
@@ -26,30 +26,33 @@ function storeNumbers() {
 
 
     // Add the number to the array and clear the input field
-    numberArray[numberArray.length] = inputField.value;
-    inputField.value = "";
+    numbArray[numbArray.length] = input_Field.value;
+    input_Field.value = "";
 }
 
-function calculatePositiveNegative(numbers) {
-    let positiveCount = 0;
-    let negativeCount = 0;
-    let resultField = document.getElementById("result");
+// created a function to count the positive and negative numbers
+function calculatePosNeg(numbers) {
+    let posCount = 0;
+    let negCount = 0;
+    let result_Field = document.getElementById("result");
 
     for (let i = 0; i < numbers.length; i++) {
         if (numbers[i] < 0) {
-            negativeCount++;
+            negCount++;
         } else {
-            positiveCount++;
+            posCount++;
         }
     }
 
-    if (positiveCount === 1 && negativeCount !== 1) {
-        resultField.textContent = "You entered " + positiveCount + " positive number and " + negativeCount + " negative numbers.";
-    } else if (positiveCount !== 1 && negativeCount === 1) {
-        resultField.textContent = "You entered " + positiveCount + " positive numbers and " + negativeCount + " negative number.";
-    } else if (positiveCount === 1 && negativeCount === 1) {
-        resultField.textContent = "You entered " + positiveCount + " positive number and " + negativeCount + " negative number.";
+    // will solve the amount and print the according sentence
+    if (posCount === 1 && negCount !== 1) {
+        result_Field.textContent = "You entered " + posCount + " positive number and " + negCount + " negative numbers.";
+    } else if (posCount !== 1 && negCount === 1) {
+        result_Field.textContent = "You entered " + posCount + " positive numbers and " + negCount + " negative number.";
+    } else if (posCount === 1 && negCount === 1) {
+        result_Field.textContent = "You entered " + posCount + " positive number and " + negCount + " negative number.";
     } else {
-        resultField.textContent = "You entered " + positiveCount + " positive numbers and " + negativeCount + " negative numbers.";
+        result_Field.textContent = "You entered " + posCount + " positive numbers and " + negCount + " negative numbers.";
     }
+
 }
