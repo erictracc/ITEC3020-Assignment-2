@@ -9,7 +9,7 @@
 
 body {
     background-color: white;
-    background-image: url('media/yellow_waves.gif');
+    background-image: url('Directory/yellow_waves.gif');
     background-size: cover; /*covers the background gif across the body of the page*/
     font-family: Hack, monospace;
     height: 100%;

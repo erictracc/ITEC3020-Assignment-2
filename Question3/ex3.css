@@ -1,6 +1,6 @@
 body {
     background-color: white;
-    background-image: url('media/tech_squares.gif');
+    background-image: url('Directory/tech_squares.gif');
     background-size: cover; /* covers the background gif across the body of the page */
     font-family: Hack, monospace;
     height: 100%;
